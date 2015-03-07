@@ -1,0 +1,66 @@
+<% include header.html %>
+  <h1>CIS 197 Course Review</h1>
+
+  <div id='search-container' class='listen-to'></div>
+  <div id='suggestion-container' class='listen-to'></div>
+  <br />
+  <br />
+
+  <div id='show-course-container'></div>
+
+  <template id='search-template' type='text/template'>
+    <input type="text" name="search" id="search" class="search" value="" />
+  </template>
+
+  <template id='suggestion-template' type='text/template'>
+    <div class="possible-course course-link" data-id="{{_id}}">
+      <a href="#">
+        {{ name }}
+      </a>
+    </div>
+  </template>
+
+  <template id='show-template'>
+    <div id='show-course'>
+      <h1 id="name">{{ name }}</h1>
+      <h2>Department: {{ department }} </h2>
+      <h2>Instructor: {{ instructor }} </h2>
+
+      <h2 id='reviews'>Reviews</h2>
+   
+      <div id='reviews-container'></div>
+
+      <form action="#" method="post" id="submit-review">
+        <textarea name="review" id="review-textarea" rows="3" cols="40"></textarea>
+        <br>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+
+      <div id="home">
+        <a href="/">Home</a>
+      </div>
+    </div>
+  </template>
+
+  <template id='review-template' type='text/html'>
+    <div id="{{ _id }}" class='review'>
+      <span class="review-text">{{ text }}</span>
+      <button type="update" class="update">Update</button>
+      <button type="delete" class="delete" >Delete</button>
+    </div>
+  </template>
+
+  <template id='review-update-template' type='text/html'>
+    <input type="text" class="new-text" value="{{ text }}" />
+    <button type="save" class="save">Save</button>
+  </template>
+
+  <script src="/js/trie.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/app/models/courseModel.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/app/collections/courseCollection.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/app/views/searchView.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/app/views/courseView.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/app/models/reviewModel.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/app/collections/reviewCollection.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/app/routers/courseRouter.js" type="text/javascript" charset="utf-8"></script>
+<% include footer.html %>

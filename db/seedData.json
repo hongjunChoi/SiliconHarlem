@@ -1,0 +1,88 @@
+{
+  "courses": {
+    "CIS197": {
+      "_id": "54c1321303069f7ee53adcfb",
+      "name": "CIS197",
+      "instructor": "Sibner",
+      "department": "CIS",
+      "reviews": []
+    },
+    "CIS120": {
+      "_id": "54c1321303069f7ee53adcfa",
+      "name": "CIS120",
+      "instructor": "Weirich",
+      "department": "CIS",
+      "reviews": []
+    },
+    "BIOL121": {
+      "_id": "54c1321303069f7ee53adcfc",
+      "name": "BIOL121",
+      "instructor": "Moorman",
+      "department": "BIOL",
+      "reviews": []
+    },
+    "MUSC050": {
+      "_id": "54c1321303069f7ee53adcfd",
+      "name": "MUSC050",
+      "instructor": "Muller",
+      "department": "MUSC",
+      "reviews": []
+    },
+    "FNCE100": {
+      "_id": "54c1321303069f7ee53adcfe",
+      "name": "FNCE100",
+      "instructor": "Mackinlay",
+      "department": "FNCE",
+      "reviews": []
+    },
+    "FNAR264": {
+      "_id": "54c1321303069f7ee53adcff",
+      "name": "FNAR264",
+      "instructor": "Reifsnyder",
+      "department": "FNAR",
+      "reviews": []
+    },
+    "ECON101": {
+      "_id": "54c1321303069f7ee53adcaa",
+      "name": "ECON101",
+      "instructor": "Burdett",
+      "department": "ECON",
+      "reviews": []
+    },
+    "MATH240": {
+      "_id": "54c1321303069f7ee53adcab",
+      "name": "MATH240",
+      "instructor": "Deturck",
+      "department": "MATH",
+      "reviews": []
+    },
+    "ENGL095": {
+      "_id": "54c1321303069f7ee53adcac",
+      "name": "ENGL095",
+      "instructor": "Pinar",
+      "department": "ENGL",
+      "reviews": []
+    },
+    "WRIT076": {
+      "_id": "54c1321303069f7ee53adcad",
+      "name": "WRIT076",
+      "instructor": "Choudhury",
+      "department": "WRIT",
+      "reviews": []
+    },
+    "CHEM102": {
+      "_id": "54c1321303069f7ee53adcae",
+      "name": "CHEM102",
+      "instructor": "Pietrovito",
+      "department": "CHEM",
+      "reviews": []
+    },
+    "FREN120": {
+      "_id": "54c1321303069f7ee53adcaf",
+      "name": "FREN120",
+      "instructor": "Snider",
+      "department": "FREN",
+      "reviews": []
+    }
+  }
+}

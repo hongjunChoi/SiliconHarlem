@@ -12,11 +12,12 @@ var courseSchema = new mongoose.Schema({
   name: String,
   department: String,
   instructor: String,
-  reviews: [reviewSchema] //change this to data spec######3
+  reviews: [reviewSchema] //change this to data spec######
+  
 }, {versionKey: false});
 
-var Review = mongoose.model('Reviews', reviewSchema); //remove this one#####
-var Course = mongoose.model('Courses', courseSchema); //change this one to company######3
+var Review = mongoose.model('Reviews', reviewSchema); //remove this one##################
+var Course = mongoose.model('Courses', courseSchema); //change this one to company#######
 
 ///###################find id of mongo
 

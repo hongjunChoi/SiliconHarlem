@@ -1,13 +1,13 @@
 var express = require('express');
-var coursesDb = require('../db/course');
+var coursesDb = require('../db/course'); // need to change later
 
 var router = express.Router();
 
-/* GET all courses */
-router.get('/courses', function (req, res) {
+/* GET all companies */
+router.get('/companies', function (req, res) {
   // TODO: Get data for all courses and respond to the GET request with this data.
-  coursesDb.findCourses(function (err, courses) {
-    res.send(courses);
+  coursesDb.findCompanies(function (err, companies) {
+    res.send(companies);
     if (err) {
       console.log(err);
     }
@@ -15,7 +15,7 @@ router.get('/courses', function (req, res) {
 });
 
 /* GET course show page. */
-router.get('/courses/:id', function (req, res) {
+router.get('/companies/:id', function (req, res) {
   // TODO: Render the index page
   res.render('index');
 });

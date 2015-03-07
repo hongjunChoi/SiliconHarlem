@@ -1,15 +1,15 @@
 var mongo = require('./mongo');
 
 module.exports = {
-  findCourses: function (callback) {
-    mongo.Course.find(function (err, courses) {
-      callback(err, courses);
+  findCompanies: function (callback) {
+    mongo.Course.find(function (err, companies) {
+      callback(err, companies);
     });
-  },
+  }, // change this to find ALL companies.
 
-  findCourse: function (_id, callback) {
-    mongo.Course.findById(_id, function (err, course) {
-      callback(err, course);
+  findCompany: function (_id, callback) {
+    mongo.Course.findById(_id, function (err, company) {
+      callback(err, company);
     });
-  }
+  } // change this to find a particular company with the given id.
 };

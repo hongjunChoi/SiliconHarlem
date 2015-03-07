@@ -1,0 +1,67 @@
+#logo{
+	display : inline;
+}
+#container3{
+	background-size: 0%;
+}
+#phoneNum{
+	display:inline;
+}
+
+#map-canvas {
+	height: 500px;
+	width : 800px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.jumbotron{
+	/*height: calc(100vh-50px) !important; /* Full PAge */
+	position: relative;
+	background-attachment: fixed;
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 50px;
+	color: #f8f8f8;
+	/*background: url(jumbotron_bg.jpg) no-repeat fixed;
+	background-size: cover;*/
+	text-align: center;
+}
+
+#container1{
+	display: block;
+	background-attachment: fixed !important;
+	background-color: LightSteelBlue ;
+	height: 450px !important;
+	text-align: center;
+}
+
+		#container1 > div > div {
+			margin : 0px 5%;
+			text-align : center;
+		}
+
+#container2 {
+	height: 450px;
+	background-color: LightGray;
+}
+
+#signscreen {
+	position: relative;
+	background-attachment: fixed;
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 50px;	
+	margin-left: 50px;
+	color: #f8f8f8;
+	background: url(jumbotron_bg.jpg) no-repeat fixed;
+	background-size: cover;
+	text-align: left;
+}
+
+form > *{
+	color: white !important;
+}
+
+input {
+	width : inherit;
+	background-color : #fff;
+}

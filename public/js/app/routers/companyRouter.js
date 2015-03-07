@@ -9,14 +9,14 @@ $(function () {
     index: function () {
      // TODO: Render searchView - should only be one line
      //var view = new SearchView();
-     window.searchView.render();
+     window.indexView.render();
     },
 
     getCompany: function (id) {
       /* TODO: Render searchView, query for all courses,
       add them to the collection, set window.model to course
       with specific id, and render courseView */
-      window.searchView.render();
+      window.companyView.render();
       window.courseCollection.fetch({
         success: function (options) {
           window.courseCollection.add(options);

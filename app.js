@@ -3,8 +3,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 
 var index = require('./routes/index');
-var course = require('./routes/companies');
-var review = require('./routes/reviews');
+var company = require('./routes/companies');
 var app = express();
 
 // serve static pages
@@ -18,6 +17,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // TODO Make app use routes
 app.use(index);
 app.use(company);
-app.use(review);
 
 module.exports = app;

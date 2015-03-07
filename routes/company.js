@@ -6,8 +6,8 @@ var router = express.Router();
 /* GET all companies */
 router.get('/companies', function (req, res) {
   // TODO: Get data for all courses and respond to the GET request with this data.
-  coursesDb.findCourses(function (err, courses) {
-    res.send(courses);
+  coursesDb.findCompanies(function (err, companies) {
+    res.send(companies);
     if (err) {
       console.log(err);
     }

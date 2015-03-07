@@ -1,0 +1,91 @@
+body {
+  background-color: #3498db;
+}
+
+h1 {
+  font: 5em "Arial";
+  text-align: center;
+}
+
+h2 {
+  font: 3em "Arial";
+  text-align: center;
+  margin: 0.2em;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.possible-course {
+  font: 2em "Arial";
+  text-align: center;
+  background-color: white;
+  border: 5px solid #a9a9a9;
+  border-radius: 20px;
+  margin: 0.3em 0;
+}
+
+.review {
+  font: 1em "Arial";
+  margin: 0.7em auto;
+  text-align: center;
+}
+
+#search-container {
+  width: 50%;
+  margin: 0 auto 2em;
+  height: 5em;
+}
+
+#search {
+  width: 100%;
+  height: 100%;
+  border: 10px solid #a9a9a9;
+  border-radius: 20px;
+  font: 2em "Arial";
+  margin-bottom: 0.5em;
+}
+
+#suggestion-container {
+  width: 80%;
+  margin: 0.5em auto;
+  height: 100%;
+}
+
+#show-course {
+  background-color: #eee;
+  width: 80%;
+  margin: 0 auto;
+  border: 10px solid #a9a9a9;
+  border-radius: 20px;
+}
+
+#name {
+  margin: 0.3em;
+}
+
+#submit-review {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#review-textarea {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  font: 2em "Arial";
+}
+
+#submit {
+  display: block;
+  margin: 0.5em auto 0;
+  width: 80%;
+  font-size: 2em;
+}
+
+#home {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1em;
+}

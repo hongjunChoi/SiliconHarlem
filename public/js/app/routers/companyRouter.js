@@ -1,8 +1,8 @@
 $(function () {
-  var CourseRouter = Backbone.Router.extend({
+  var CompanyRouter = Backbone.Router.extend({
     routes: {
       '': 'index',
-      'courses/:id': 'getCourse'
+      'companies/:id': 'getCompany'
       // TODO: Set routes
     },
 
@@ -12,7 +12,7 @@ $(function () {
      window.searchView.render();
     },
 
-    getCourse: function (id) {
+    getCompany: function (id) {
       /* TODO: Render searchView, query for all courses,
       add them to the collection, set window.model to course
       with specific id, and render courseView */
@@ -27,6 +27,6 @@ $(function () {
     }
   });
 
-  window.courseRouter = new CourseRouter();
+  window.companyRouter = new CompanyRouter();
   Backbone.history.start({pushState: true});
 });

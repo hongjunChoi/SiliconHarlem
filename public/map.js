@@ -13,7 +13,7 @@ $.get('/companies', function(result){
 var styles = [
   {
     stylers: [
-      { hue: "#8C8C8C" },
+      { hue: "#E6E6E6" },
       { saturation: 0 }
     ]
   },{

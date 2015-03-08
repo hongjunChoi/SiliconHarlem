@@ -13,8 +13,8 @@ var companySchema = new mongoose.Schema({
     city: String,
     state: String,
     zip: String,
-    latitude: Double,
-    longitude: Double
+    latitude: Number,
+    longitude: Number
   },
   contact: {
     website: String,

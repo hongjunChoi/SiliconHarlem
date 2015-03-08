@@ -17,7 +17,6 @@ $(function () {
     render: function () {
       //console.log($(.list-group-item));
       $('.list-group-item').remove();
-      console.log(window.model.attributes);
       /*window.companyCollection.fetch({
         success: function (options) {
           var showTemplate = $('#show-template').html();
@@ -32,6 +31,9 @@ $(function () {
         website: attr.contact.website
       };
       console.log(data); 
+      var companyTemplate = $('#company-template').html();
+      var domElement = Mustache.render(companyTemplate, data);
+      $(domElement).appendTo($('#company-container'));
     }
   });
 

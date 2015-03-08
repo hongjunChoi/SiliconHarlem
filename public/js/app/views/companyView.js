@@ -50,7 +50,7 @@ $(function () {
         var json = options.toJSON();
         var button;
         for (var i = 0; i < json.length; i++) {
-          button = '<button id=' + json[i]._id + ' class="list-group-item" style = "width = 100px">' + json[i].name + '</button>';
+          button = '<button id=' + json[i]._id + ' class="list-group-item" style = "width:100px; margin-left:250px">' + json[i].name + '</button>';
           $('#info_column ul').append(button);
         }
         //this.renderSideBar();
@@ -59,7 +59,6 @@ $(function () {
   };
 
   function createCompany() {
-      console.log('submit button works');
       //var url = '/companies/' + window.model.id;
       var url = '/companies/submit';
       var companyModel = new window.Company(url);
@@ -69,7 +68,6 @@ $(function () {
       var website = $('#website').val();
       var latitude = $('#latitude').val();
       var longitude = $('#longitude').val();
-      console.log(name);
       var data = {
         name: name,
         description: description,
@@ -88,10 +86,12 @@ $(function () {
       }
       companyModel.save(data); // sends post request 
       $("#map-canvas").empty();
-      $.getScript('/path/to/imported/script.js', function()
+      console.log('=============================');
+      $.getScript('../../../../map.js', function()
       {
           // script is now loaded and executed.
           // put your dependent JS here.
+          console.log("asdfasf");
           alert("your data is successfully updated.");
       });
     }

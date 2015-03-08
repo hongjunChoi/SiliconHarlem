@@ -16,6 +16,7 @@ $(function () {
 
     render: function () {
       //console.log($(.list-group-item));
+      $('.company-list').remove();
       $('.list-group-item').remove();
       /*window.companyCollection.fetch({
         success: function (options) {

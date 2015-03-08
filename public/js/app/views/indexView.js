@@ -25,9 +25,11 @@ $(function () {
       window.companyCollection.fetch({
         success: function (options) {
           var json = options.toJSON();
-          console.log(json);
+          var li;
           for (var i = 0; i < json.length; i++) {
-            console.log(json[i].name);
+            li = '<li class="list-group-item">' + json[i].name + '</li>';
+            console.log(li);
+            $('#info_column ul').append(li);
           }
 
           //this.renderSideBar();

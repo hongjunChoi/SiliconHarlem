@@ -7,10 +7,17 @@ var db = mongoose.connection;
 var courseSchema = new mongoose.Schema({
   _id: mongoose.Schema.ObjectId,
   name: String,
-  department: String,
-  instructor: String,
-  reviews: [reviewSchema] //change this to data spec######
-
+  description: String,
+  address: {
+    street: String,
+    city: String,
+    state: String,
+    zip: String
+  },
+  contact: {
+    website: String,
+    email: String
+  }
 }, {versionKey: false});
 
 var Company = mongoose.model('Company', courseSchema); 

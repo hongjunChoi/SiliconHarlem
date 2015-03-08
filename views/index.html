@@ -70,13 +70,22 @@
     <div id="map-canvas"></div>
     <div style = "margin-top: -140px; height : 640px" id="info_column">
       <strong><center><p>Company List</p><center></strong>
+        <div id='company-container'> </div>
         <ul class="list-group" style = "width : 500px">
  
         </ul>
     </div>
 
+    <template id='company-template'>
+      <div id='show-course'>
+        <h1 id="name">{{ name }}</h1>
+        <h2>Description: {{ description }} </h2>
+        <h2>Website: {{ website }} </h2>
+      </div>
+    </template>
 
-      <div style = "background-image : url(background1.jpg); background-size : 100% 100%; margin-top : -150px; padding-top : 50px; padding-left : 100px">
+
+    <div style = "background-image : url(background1.jpg); background-size : 100% 100%; margin-top : -150px; padding-top : 50px; padding-left : 100px">
       <strong> <h3> Contribute to the Harlem tech community. Add a new start up ! </h3> </strong> 
        <form style = "height : 600px;">
         <strong><label for="name"  style = "color: black">Name of the Company</label></strong> </br></br>

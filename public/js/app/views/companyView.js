@@ -17,6 +17,7 @@ $(function () {
     render: function () {
       //console.log($(.list-group-item));
       $('.list-group-item').remove();
+      console.log(window.model.attributes);
       /*window.companyCollection.fetch({
         success: function (options) {
           var showTemplate = $('#show-template').html();
@@ -24,7 +25,13 @@ $(function () {
           $(domElement).appendTo($('#show-course-container'));
         }
       }); */
-      console.log(window.model.attributes);
+      var attr = window.model.attributes;
+      var data = {
+        name: attr.name,
+        description: attr.description,
+        website: attr.contact.website
+      };
+      console.log(data); 
     }
   });
 

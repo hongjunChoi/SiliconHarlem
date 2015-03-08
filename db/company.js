@@ -1,5 +1,5 @@
 var mongo = require('./mongo');
-//change file to company.js#########
+
 module.exports = {
   findCompanies: function (callback) {
     mongo.Course.find(function (err, companies) {

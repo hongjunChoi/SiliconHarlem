@@ -11,6 +11,10 @@ module.exports = {
     mongo.Company.findById(_id, function (err, company) {
       callback(err, company);
     });
-  } // change this to find a particular company with the given id. Can also find by name instead of id.
+  }, // change this to find a particular company with the given id. Can also find by name instead of id.
+
+  createCompany: function(data, callback) {
+    mongo.Company.save(data);
+  }
 };
 

@@ -27,7 +27,7 @@ $(function () {
           var json = options.toJSON();
           var button;
           for (var i = 0; i < json.length; i++) {
-            button = '<button id=' + json[i]._id + ' class="list-group-item" style = "width = 100px">' + json[i].name + '</button>';
+            button = '<button id=' + json[i]._id + ' class="list-group-item" style = "margin-left = 250px; width = 200px">' + json[i].name + '</button>';
             $('#info_column ul').append(button);
           }
 

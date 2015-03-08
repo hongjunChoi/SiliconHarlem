@@ -16,12 +16,12 @@ module.exports = {
   createCompany: function(data, callback) {
     data._id = null;
     var co = new mongo.Company(data);
-    console.log("co %j", co);
     co.save(function (err) {
       if (err) {
         console.log(err);
       }
     });
+    window.indexView.render();
     // mongo.Company.save(data);
   }
 };

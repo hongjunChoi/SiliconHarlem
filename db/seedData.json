@@ -1,6 +1,7 @@
 {
   "companies": {
-    "Harlem_BioSpace" {
+    "Harlem_BioSpace": {
+      "_id": "54c1321303069f7ee53adcfa",
       "name": "Harlem BioSpace",
       "description": "cool startup",
       "address": {
@@ -14,7 +15,8 @@
         "email":"none"
       }
     },
-    "Creative_Workspace" {
+    "Creative_Workspace": {
+      "_id": "54c1321303069f7ee53adcfb",
       "name": "Creative Workspace",
       "description": "cool startup",
       "address": {

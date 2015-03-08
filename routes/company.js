@@ -20,5 +20,14 @@ router.get('/companies/:id', function (req, res) {
   res.render('index');
 });
 
+/* POST request to add a company to the database */
+router.post('/companies/submit'), function (req, res) {
+  console.log('req: ' + req);
+  companiesDb.createCompany(data, function (err) {
+    if (err) {
+      console.log(err);
+    }
+  })
+}
 
 module.exports = router;

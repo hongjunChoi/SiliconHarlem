@@ -47,10 +47,10 @@
 	text-align: center;
 }
 
-		#container1 > div > div {
-			margin : 0px 5%;
-			text-align : center;
-		}
+#container1 > div > div {
+	margin : 0px 5%;
+	text-align : center;
+}
 
 #container2 {
 	height: 450px;

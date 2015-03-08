@@ -27,9 +27,8 @@ $(function () {
           var json = options.toJSON();
           var li;
           for (var i = 0; i < json.length; i++) {
-            li = '<li class="list-group-item">' + json[i].name + '</li>';
-            console.log(li);
-            $('#info_column ul').append(li);
+            button = '<button class="list-group-item">' + json[i].name + '</button>';
+            $('#info_column ul').append(button);
           }
 
           //this.renderSideBar();

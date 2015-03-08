@@ -1,5 +1,5 @@
 {
-  "companies": {
+   "companies": {
     "Harlem_BioSpace": {
       "_id": "54c1321303069f7ee53adcfa",
       "name": "Harlem BioSpace",
@@ -17,8 +17,59 @@
         "email":"none"
       }
     },
-    "Creative_Workspace": {
+    "Technocraft Inc": {
       "_id": "54c1321303069f7ee53adcfb",
+      "name": "Technocraft Inc",
+      "description": "We need to figure out",
+      "address": {
+        "street": "2367 Frederick Douglass Blvd",
+        "city": "New York",
+        "state": "New York",
+        "zip": "10027",
+        "latitude": 40.811936,
+        "longitude": -73.950323
+      },
+      "contact": {
+        "website": "http://www.yellowpages.com/new-york-ny/mip/technocraft-inc-7826406?lid=7826406",
+        "phone":"(212)663-5302"
+      }
+    },
+    "Inlet Software": {
+      "_id": "54c1321303069f7ee53adcfc",
+      "name": "Inlet Software",
+      "description": "Computer software and services",
+      "address": {
+        "street": "198 W 134th St",
+        "city": "New York",
+        "state": "New York",
+        "zip": "10030",
+        "latitude": 40.814595,
+        "longitude": -73.943847,
+      },
+      "contact": {
+        "website": "http://www.yellowpages.com/new-york-ny/mip/inlet-software-5627082?lid=5627082",
+        "email":"none"
+      }
+    },
+    "IBK Software": {
+      "_id": "54c1321303069f7ee53adcfd",
+      "name": "IBK Software",
+      "description": "Rennovate IBK technology services",
+      "address": {
+        "street": "419 W 154th St",
+        "city": "New York",
+        "state": "New York",
+        "zip": "10032",
+        "latitude": 40.830953,
+        "longitude": -73.942335
+      },
+      "contact": {
+        "website": "http://www.yellowpages.com/new-york-ny/mip/ibk-software-21661156?lid=21661156",
+        "email":"none"
+      }
+    },
+    "Creative_Workspace": {
+      "_id": "54c1321303069f7ee53adcfe",
       "name": "Creative Workspace",
       "description": "cool startup",
       "address": {
@@ -31,6 +82,97 @@
       },
       "contact": {
         "website": "creativeworkspacehba.com",
+        "email":"none"
+      }
+    },
+
+      "Quality_Tech_Pest_Control_Co": {
+      "_id": "54c1321303069f7ee53adcff",
+      "name": "Quality Tech Pest Control Co",
+      "description": "cool startup",
+      "address": {
+        "street": "230 W 116th St",
+        "city": "New York",
+        "state": "New York",
+        "zip": "10026",
+        "latitude": 40.804593,
+        "longitude": -73.953923
+      },
+      "contact": {
+        "website": "http://www.yellowpages.com/new-york-ny/mip/quality-tech-pest-control-co-9959117",
+        "email":"none"
+      }
+
+    },
+
+      "A2Z_Tech_Group": {
+      "_id": "54c1321303069f7ee53addd01",
+      "name": "A2Z Tech Group",
+      "description": "cool startup",
+      "address": {
+        "street": "1400 5th Ave",
+        "city": "New York",
+        "state": "New York",
+        "zip": "10026",
+        "latitude": 40.800640,
+        "longitude": -73.946946
+      },
+      "contact": {
+        "website": "none",
+        "email":"none"
+      }
+      },
+
+      "Teamwork_Technology": {
+      "_id": "54c1321303069f7ee53addd03",
+      "name": "Teamwork Technology",
+      "description": "computer software and services",
+      "address": {
+        "street": "605 W 113th",
+        "city": "New York",
+        "state": "New York",
+        "zip": "10025",
+        "latitude": 40.806608,
+        "longitude": -73.965887
+      },
+      "contact": {
+        "website": "none",
+        "email":"none"
+      }
+      },
+
+      "Schrodinger_Inc": {
+      "_id": "54c1321303069f7ee53addd02",
+      "name": "Schrodinger Inc",
+      "description": "cool startup",
+      "address": {
+        "street": "500 W 120st St",
+        "city": "New York",
+        "state": "New York",
+        "zip": "10027",
+        "latitude": 40.809620,
+        "longitude": -73.960038
+      },
+      "contact": {
+        "website": "none",
+        "email":"none"
+      }
+      },
+
+      "Virtusonics_Corp": {
+      "_id": "54c1321303069f7ee53addd04",
+      "name": "Virtusonics Corp",
+      "description": "computer software and services",
+      "address": {
+        "street": "125 W 106th St",
+        "city": "New York",
+        "state": "New York",
+        "zip": "10025",
+        "latitude": 40.800092,
+        "longitude": -73.963866
+      },
+      "contact": {
+        "website": "none",
         "email":"none"
       }
     }

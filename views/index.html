@@ -88,10 +88,24 @@
     <div style = "background-image : url(background1.jpg); background-size : 100% 100%; margin-top : -150px; padding-top : 50px; padding-left : 100px">
       <strong> <h3> Contribute to the Harlem tech community. Add a new start up ! </h3> </strong> 
        <form style = "height : 600px;">
-        <strong><label for="name"  style = "color:black !important">Name of the Company</label></strong> </br></br>
+        <strong><label for="name"  style = "color:black !important">Name of the Company</label></strong> 
         <input type="name" id="companyName"  placeholder="name of company" required autofocus; style = "color:black !important"></br></br>
-        <strong><label for="contact info" style = "color:black">Contact</label></strong></br></br>
+        <strong><label for="contact info" style = "color:black">Contact</label></strong>
         <input type="contact" id="contact"  placeholder="contact" required; style = "color:black !important"></br></br>
+
+        <strong><label for="website" style = "color:black">website</label></strong>
+        <input type="website" id="website"  placeholder="website" required; style = "color:black !important"></br></br>
+
+        <strong><label for="address" style = "color:black">address</label></strong>
+        <input type="address" id="address"  placeholder="address" required; style = "color:black !important"></br></br>
+
+        <strong><label for="latitude" style = "color:black">latitude</label></strong>
+        <input type="latitude" id="latitude"  placeholder="latitude" required; style = "color:black !important"></br></br>
+
+        <strong><label for="longitude" style = "color:black">longitude</label></strong>
+        <input type="longitude" id="longitude"  placeholder="longitude" required; style = "color:black !important"></br></br>
+
+
         <strong> <p style = "color:black !important">select among this list below : </strong> <br/></p>
         <select name ="activity" style = "color : black">
           <option value = "0" style = "color : black">please choose from below </option>
@@ -102,11 +116,13 @@
           <option value = "5" style = "color : black"> hardware </option>   
       </select>
       <br/></br>
-        <p style = "color:black !important"><strong> Tell us about the company: <br/></strong></p>
-        <textarea name= "bio" rows ="8" cols = "50" style="color:black !important">
-        </textarea>
-        <br/> 
-        <button id="signin" type="button" class="btn btn-primary btn-lg" style = "background-color: blue; width:400px; color:white ">Add to this company to Silicon Harlem</button>
+        <div style='position : relative; left : 500px; top : -300px' >
+          <p style = "color:black !important"><strong> Tell us about the company: <br/></strong></p>
+          <textarea name= "bio" rows ="8" cols = "50" style="color:black !important">
+          </textarea>
+          <br/> 
+          <button id="signin" type="button" class="btn btn-primary btn-lg" style = "width:400px; color:white ">Add to this company to Silicon Harlem</button>
+        </div>
       </form>
     </div>
     <!-- Bootstrap core JavaScript

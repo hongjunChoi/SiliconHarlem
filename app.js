@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 
 var index = require('./routes/index');
-var company = require('./routes/companies');
+var company = require('./routes/company');
 var app = express();
 
 // serve static pages

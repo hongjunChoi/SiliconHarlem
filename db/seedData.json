@@ -1,9 +1,8 @@
 {
   "companies": {
-    "Harlem_BioSpace"{
+    "Harlem_BioSpace" {
       "name": "Harlem BioSpace",
       "description": "cool startup",
-
       "address": {
         "street": "423 W 127th St",
         "city": "New York",
@@ -15,10 +14,9 @@
         "email":"none"
       }
     },
-    "Creative_Workspace"{
+    "Creative_Workspace" {
       "name": "Creative Workspace",
       "description": "cool startup",
-
       "address": {
         "street": "275 Malcolm X Blvd # 2",
         "city": "New York",

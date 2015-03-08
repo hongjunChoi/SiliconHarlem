@@ -1,6 +1,6 @@
 $(function () {
   var CompanyView = Backbone.View.extend({
-    el: $('.listen-to'),
+    el: $('#info_column'),
     events: {
       // TODO: Define events
       'click .list-group-item': 'redirect'
@@ -8,19 +8,13 @@ $(function () {
 
     redirect: function (e) {
       // TODO: prevent default, get the id, and navigate to that course's url.
-      /*e.preventDefault();
+      e.preventDefault();
+      console.log($(e.currentTarget));
       var id = $(e.currentTarget).attr('data-id');
-      window.courseRouter.navigate('/companies/' + id, {trigger: true});
-      */
-      console.log('clicked on button');
+      //window.companyRouter.navigate('/companies/' + id, {trigger: true});
     },
 
     render: function () {
-      /* TODO: Query for all courses, parse courseModels
-      with .toJSON, instantiate a new trie, and render
-      the search bar. */
-
-      // is a success callback necessary?
       /*window.companyCollection.fetch({
         success: function (options) {
           var showTemplate = $('#show-template').html();
@@ -28,7 +22,7 @@ $(function () {
           $(domElement).appendTo($('#show-course-container'));
         }
       }); */
-      console.log('clicked on button');
+      console.log('rerouted');
     }
   });
 

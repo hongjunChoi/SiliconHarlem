@@ -21,13 +21,22 @@ router.get('/companies/:id', function (req, res) {
 });
 
 /* POST request to add a company to the database */
-router.post('/companies/submit'), function (req, res) {
-  console.log('req: ' + req);
+router.post('/companies/submit', function (req, res) {
+  console.log('req: body: %j', req.body);
+  var body = req.body;
+  var name = body.name;
+  var address = body.address;
+  var contact = body.contact;
+  var description = body.description;
+  var data = {'address':address, 'contact':contact, 'name':name, 'description':description};
+  console.log('post: data: %j', data);
   companiesDb.createCompany(data, function (err) {
     if (err) {
       console.log(err);
+      res.send({'result':'fail', 'error':err});
     }
-  })
-}
+  });
+  res.send({'result':'success'});
+});
 
 module.exports = router;

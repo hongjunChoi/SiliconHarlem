@@ -87,4 +87,11 @@ $(function () {
         }
       }
       companyModel.save(data); // sends post request 
+      $("#map-canvas").empty();
+      $.getScript('/path/to/imported/script.js', function()
+      {
+          // script is now loaded and executed.
+          // put your dependent JS here.
+          alert("your data is successfully updated.");
+      });
     }

@@ -53,6 +53,11 @@ function initialize(){
         });
       }
     });
+
+    google.maps.event.addListener(marker, 'dblclick', function() {
+    map.setZoom(8);
+    map.setCenter(marker.getPosition());
+    });
 }
 
 

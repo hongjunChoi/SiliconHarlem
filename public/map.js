@@ -6,7 +6,7 @@ $.get('/companies', function(result){
     array = new Array(result.length);
     for(var i = 0; i < result.length; i++){
         array[i] = new Array(2);
-        console.log(result[address]);
+        console.log(result);
         array[i][0] = result.address.latitude;
         array[i][1] = result.address.longitude;
     }

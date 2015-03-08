@@ -8,7 +8,9 @@
         "street": "423 W 127th St",
         "city": "New York",
         "state": "New York",
-        "zip": "10027"
+        "zip": "10027",
+        "latitude": 40.813560,
+        "longitude": -73.954182
       },
       "contact": {
         "website": "harlembiospace.com",
@@ -23,7 +25,9 @@
         "street": "275 Malcolm X Blvd # 2",
         "city": "New York",
         "state": "New York",
-        "zip": "10027"
+        "zip": "10027",
+        "latitude": 40.806933,
+        "longitude": -73.946215
       },
       "contact": {
         "website": "creativeworkspacehba.com",

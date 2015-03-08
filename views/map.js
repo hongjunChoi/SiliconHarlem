@@ -20,6 +20,7 @@ google.maps.event.addDomListener(window, "load", initialize);
     url: "/companies",
     success: function(data){
         for(i = 0, len= data.length; i < len; i++){
+            console.log("asdfasdf!")
           // var newDiv=document.createElement('option');
           // code = data[i]["code"];
           // cityName = data[i]["name"]; 

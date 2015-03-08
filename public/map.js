@@ -10,12 +10,35 @@ $.get('/companies', function(result){
     }
 });
 
+var styles = [
+  {
+    stylers: [
+      { hue: "#8C8C8C" },
+      { saturation: 0 }
+    ]
+  },{
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [
+      { lightness: 100 },
+      { visibility: "simplified" }
+    ]
+  },{
+    featureType: "road",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+
 function initialize(){
 	var mapOptions = {
 		zoom: 14, 
 		center: new google.maps.LatLng(40.815892, -73.949634),
-		draggable: false  
-	 }
+		draggable: false,
+		styles: styles
+	}
 	
 	map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 		var myLatlng;

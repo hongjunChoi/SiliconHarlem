@@ -43,10 +43,8 @@ $(function () {
 
 function back(){
   $("#info_column").empty();
-  console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
   $( "#info_column" ).append("<strong><center><p style = 'padding-left:50px; margin-top:100px' class='company-list'>Company List</p><center></strong>");
   $( "#info_column" ).append("<div id='company-container' style='padding-left:50px'> </div>   <ul class='list-group' style = 'width : 500px'></ul>");
-  console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
   window.companyCollection.fetch({
     success: function (options) {
       var json = options.toJSON();

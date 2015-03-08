@@ -40,3 +40,12 @@ $(function () {
 
   window.indexView = new IndexView();
 });
+
+function upload(){
+  $.post('/companies'  {
+    
+
+
+  });
+
+}

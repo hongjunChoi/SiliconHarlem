@@ -13,7 +13,6 @@ $(function () {
       var id = $(e.currentTarget).attr('id');
       window.companyRouter.navigate('/companies/' + id, {trigger: true});
     },
-
     render: function () {
       //console.log($(.list-group-item));
       $('.company-list').remove();
@@ -25,6 +24,7 @@ $(function () {
           $(domElement).appendTo($('#show-course-container'));
         }
       }); */
+      $( "#info_column" ).append( "<button style='margin-top:-780px' id='signin'  onclick='back()' type='button' class='btn btn-success'>Back</button>" );
       var attr = window.model.attributes;
       var data = {
         name: attr.name,
@@ -40,3 +40,22 @@ $(function () {
 
   window.companyView = new CompanyView();
 });
+
+function back(){
+  $("#info_column").empty();
+  console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+  $( "#info_column" ).append("<strong><center><p style = 'padding-left:50px; margin-top:100px' class='company-list'>Company List</p><center></strong>");
+  $( "#info_column" ).append("<div id='company-container' style='padding-left:50px'> </div>   <ul class='list-group' style = 'width : 500px'></ul>");
+  console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+  window.companyCollection.fetch({
+    success: function (options) {
+      var json = options.toJSON();
+      var button;
+      for (var i = 0; i < json.length; i++) {
+        button = '<button id=' + json[i]._id + ' class="list-group-item" style = "width = 100px">' + json[i].name + '</button>';
+        $('#info_column ul').append(button);
+      }
+      //this.renderSideBar();
+    }
+  });
+}

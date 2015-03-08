@@ -17,4 +17,12 @@ google.maps.event.addDomListener(window, "load", initialize);
 
 $.get('/companies', function(data) {
   console.log(data);
+  for(i = 0, len= data.length; i < len; i++){
+          var newlist =document.createElement('option');
+          var x = document.createElement("LI");
+          name = data[i]["name"]; 
+          $(newlist).attr("value",code);
+          $(".list-group").append(newlist);
+         
+        } 
 });

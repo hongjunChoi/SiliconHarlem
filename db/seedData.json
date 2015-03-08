@@ -1,5 +1,5 @@
 {
-   "companies": {
+  "companies": {
     "Harlem_BioSpace": {
       "_id": "54c1321303069f7ee53adcfa",
       "name": "Harlem BioSpace",
@@ -17,7 +17,7 @@
         "email":"none"
       }
     },
-    "Technocraft Inc": {
+    "Technocraft_Inc": {
       "_id": "54c1321303069f7ee53adcfb",
       "name": "Technocraft Inc",
       "description": "We need to figure out",
@@ -34,7 +34,7 @@
         "phone":"(212)663-5302"
       }
     },
-    "Inlet Software": {
+    "Inlet_Software": {
       "_id": "54c1321303069f7ee53adcfc",
       "name": "Inlet Software",
       "description": "Computer software and services",
@@ -44,14 +44,14 @@
         "state": "New York",
         "zip": "10030",
         "latitude": 40.814595,
-        "longitude": -73.943847,
+        "longitude": -73.943847
       },
       "contact": {
         "website": "http://www.yellowpages.com/new-york-ny/mip/inlet-software-5627082?lid=5627082",
         "email":"none"
       }
     },
-    "IBK Software": {
+    "IBK_Software": {
       "_id": "54c1321303069f7ee53adcfd",
       "name": "IBK Software",
       "description": "Rennovate IBK technology services",
@@ -102,7 +102,6 @@
         "website": "http://www.yellowpages.com/new-york-ny/mip/quality-tech-pest-control-co-9959117",
         "email":"none"
       }
-
     },
 
       "A2Z_Tech_Group": {
@@ -121,10 +120,10 @@
         "website": "none",
         "email":"none"
       }
-      },
+    },
 
       "Teamwork_Technology": {
-      "_id": "54c1321303069f7ee53addd03",
+      "_id": "54c1321303069f7ee53addd02",
       "name": "Teamwork Technology",
       "description": "computer software and services",
       "address": {
@@ -139,10 +138,10 @@
         "website": "none",
         "email":"none"
       }
-      },
+    },
 
       "Schrodinger_Inc": {
-      "_id": "54c1321303069f7ee53addd02",
+      "_id": "54c1321303069f7ee53addd03",
       "name": "Schrodinger Inc",
       "description": "cool startup",
       "address": {
@@ -157,7 +156,7 @@
         "website": "none",
         "email":"none"
       }
-      },
+    },
 
       "Virtusonics_Corp": {
       "_id": "54c1321303069f7ee53addd04",

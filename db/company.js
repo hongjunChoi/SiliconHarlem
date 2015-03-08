@@ -14,8 +14,14 @@ module.exports = {
   }, // change this to find a particular company with the given id. Can also find by name instead of id.
 
   createCompany: function(data, callback) {
+    data._id = null;
     var co = new mongo.Company(data);
-    co.save();
+    console.log("co %j", co);
+    co.save(function (err) {
+      if (err) {
+        console.log(err);
+      }
+    });
     // mongo.Company.save(data);
   }
 };

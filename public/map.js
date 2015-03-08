@@ -51,13 +51,14 @@ function initialize(){
             map: map,
             title: data[i].name
         });
+        google.maps.event.addListener(marker, 'dblclick', function() {
+        map.setZoom(8);
+        map.setCenter(marker.getPosition());
+        });
       }
     });
 
-    google.maps.event.addListener(marker, 'dblclick', function() {
-    map.setZoom(8);
-    map.setCenter(marker.getPosition());
-    });
+    
 }
 
 

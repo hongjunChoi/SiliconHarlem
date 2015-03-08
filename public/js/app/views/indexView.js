@@ -24,7 +24,12 @@ $(function () {
       the search bar. */
       window.companyCollection.fetch({
         success: function (options) {
-          console.log(options.toJSON());
+          var json = options.toJSON();
+          console.log(json);
+          for (var i = 0; i < json.length; i++) {
+            console.log(json[i].name);
+          }
+
           //this.renderSideBar();
         }
       });

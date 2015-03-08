@@ -8,9 +8,11 @@ $(function () {
 
     redirect: function (e) {
       // TODO: prevent default, get the id, and navigate to that course's url.
-      e.preventDefault();
+      /*e.preventDefault();
       var id = $(e.currentTarget).attr('data-id');
       window.courseRouter.navigate('/companies/' + id, {trigger: true});
+      */
+      console.log('clicked on button');
     },
 
     render: function () {

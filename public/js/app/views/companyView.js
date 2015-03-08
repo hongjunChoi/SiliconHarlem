@@ -10,11 +10,13 @@ $(function () {
       // TODO: prevent default, get the id, and navigate to that course's url.
       e.preventDefault();
       console.log($(e.currentTarget));
-      var id = $(e.currentTarget).attr('data-id');
-      //window.companyRouter.navigate('/companies/' + id, {trigger: true});
+      var id = $(e.currentTarget).attr('id');
+      window.companyRouter.navigate('/companies/' + id, {trigger: true});
     },
 
     render: function () {
+      //console.log($(.list-group-item));
+      $('.list-group-item').remove();
       /*window.companyCollection.fetch({
         success: function (options) {
           var showTemplate = $('#show-template').html();

@@ -16,14 +16,14 @@ $(function () {
       /* TODO: Render searchView, query for all courses,
       add them to the collection, set window.model to course
       with specific id, and render courseView */
-      /*window.companyView.render();
+      window.companyView.render();
       window.courseCollection.fetch({
         success: function (options) {
           window.courseCollection.add(options);
           window.model = window.courseCollection.get(id);
           window.courseView.render();
         }.bind(this)
-      });*/
+      });
     }
   });
 

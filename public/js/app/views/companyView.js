@@ -4,7 +4,7 @@ $(function () {
     events: {
       // TODO: Define events
       'click .list-group-item': 'redirect',
-      'click .submit-button': 'createCompany'
+      'click #submit-button': 'createCompany'
     },
 
     redirect: function (e) {
@@ -38,7 +38,35 @@ $(function () {
       $(domElement).appendTo($('#company-container'));
     },
     createCompany: function() {
-      
+      var name = $('#companyName').val();
+      var description = $('#description').val();
+      var contact = $('#contact').val();
+      var website = $('#website').val();
+      var latitude = $('#latitude').val();
+      var longitutde = $('#longitude').val();
+      console.log(name);
+      var data = {
+        name: name,
+        description: description,
+        address: {
+          street: "",
+          city: "",
+          state: "",
+          zip: "",
+          latitude: latitude,
+          longitude: longitude
+        },
+        contact: {
+          website: website,
+          email: contact
+        }
+      }
+      console.log(data);
+      companiesDb.createCompany(data, function (company, err) {
+        if (err) {
+          console.log(err);
+        }
+      })
     }
   });
 

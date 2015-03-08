@@ -20,12 +20,5 @@ router.get('/companies/:id', function (req, res) {
   res.render('index');
 });
 
-router.post('/companies/:id', function (req, res)) {
-  var name = 
-  var 
-  var output = {
-    
-  }
-}
 
 module.exports = router;

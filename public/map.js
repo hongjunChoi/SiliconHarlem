@@ -45,7 +45,6 @@ function initialize(){
 		var myLatlng;
 		$.get('/companies', function(data) {
       for(var i = 0; i < data.length; i++) {
-      	console.log(data[i].name);
         myLatlng = new google.maps.LatLng(array[i][0], array[i][1]);
         var marker = new google.maps.Marker({
             position: myLatlng, 

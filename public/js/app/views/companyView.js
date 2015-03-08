@@ -24,7 +24,7 @@ $(function () {
           $(domElement).appendTo($('#show-course-container'));
         }
       }); */
-      console.log('rerouted');
+      console.log(window.model.attributes);
     }
   });
 

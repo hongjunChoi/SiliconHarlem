@@ -27,6 +27,7 @@ $(function () {
       window.companyCollection.fetch({
         success: function (options) {
           console.log(options.toJSON());
+          console.log('hi');
           //this.renderSideBar();
         }
       });

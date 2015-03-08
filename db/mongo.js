@@ -3,24 +3,29 @@ mongoose.connect('mongodb://localhost/test');
 
 var db = mongoose.connection;
 
-var reviewSchema = new mongoose.Schema({
-  text: String
-});
 
 var courseSchema = new mongoose.Schema({
   _id: mongoose.Schema.ObjectId,
   name: String,
-  department: String,
-  instructor: String,
-  reviews: [reviewSchema]
+  description: String,
+  address: {
+    street: String,
+    city: String,
+    state: String,
+    zip: String
+  },
+  contact: {
+    website: String,
+    email: String
+  }
 }, {versionKey: false});
 
-var Review = mongoose.model('Reviews', reviewSchema);
-var Course = mongoose.model('Courses', courseSchema);
+var Company = mongoose.model('Company', courseSchema); 
+
+///###################find id of mongo
 
 module.exports = {
-  Review: Review,
-  Course: Course,
+  Company: Company,
   mongoose: mongoose,
-  db: db.collection('Courses')
+  db: db.collection('Companies')
 };

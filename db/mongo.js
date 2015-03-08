@@ -4,7 +4,7 @@ mongoose.connect('mongodb://localhost/test');
 var db = mongoose.connection;
 
 
-var courseSchema = new mongoose.Schema({
+var companySchema = new mongoose.Schema({
   _id: mongoose.Schema.ObjectId,
   name: String,
   description: String,
@@ -20,7 +20,7 @@ var courseSchema = new mongoose.Schema({
   }
 }, {versionKey: false});
 
-var Company = mongoose.model('Company', courseSchema); 
+var Company = mongoose.model('Companies', companySchema); 
 
 ///###################find id of mongo
 

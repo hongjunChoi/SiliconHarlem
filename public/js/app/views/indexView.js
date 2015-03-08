@@ -22,11 +22,9 @@ $(function () {
       /* TODO: Query for all courses, parse courseModels
       with .toJSON, instantiate a new trie, and render
       the search bar. */
-      
       window.companyCollection.fetch({
         success: function (options) {
           console.log(options.toJSON());
-          console.log('hi');
           //this.renderSideBar();
         }
       });

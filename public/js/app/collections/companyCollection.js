@@ -2,7 +2,7 @@ $(function () {
   var CompanyCollection = Backbone.Collection.extend({
     // TODO: Set the model and the url.
     model: Company,
-    url: '/'
+    url: '/companies'
   });
 
   window.companyCollection = new CompanyCollection();

@@ -11,10 +11,22 @@
 #map-canvas {
 	height: 500px;
 	width : 800px;
-	margin: 0px;
+	margin-top: -30px;
 	padding: 0px;
 }
 
+#info_column{
+	position : relative;
+	float : right;
+	height: 500px;
+	width : 550px;
+	margin: 0px;
+	padding: 0px;
+	left : 0px;
+	top: -500px;
+	background-color:#F5ECCE;
+
+}
 .jumbotron{
 	/*height: calc(100vh-50px) !important; /* Full PAge */
 	position: relative;

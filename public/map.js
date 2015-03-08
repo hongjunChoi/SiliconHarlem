@@ -21,7 +21,8 @@ $.get('/companies', function(data) {
           var newlist =document.createElement('option');
           var x = document.createElement("LI");
           name = data[i]["name"]; 
-          $(newlist).attr("value",code);
+          console.log(name);
+          $(newlist).attr("value",name);
           $(".list-group").append(newlist);
          
         } 

@@ -3,7 +3,8 @@ $(function () {
     el: $('#info_column'),
     events: {
       // TODO: Define events
-      'click .list-group-item': 'redirect'
+      'click .list-group-item': 'redirect',
+      'click .submit-button': 'createCompany'
     },
 
     redirect: function (e) {
@@ -35,13 +36,16 @@ $(function () {
       var companyTemplate = $('#company-template').html();
       var domElement = Mustache.render(companyTemplate, data);
       $(domElement).appendTo($('#company-container'));
+    },
+    createCompany: function() {
+      
     }
   });
 
   window.companyView = new CompanyView();
 });
 
-function back(){
+function back() {
   $("#info_column").empty();
   $( "#info_column" ).append("<strong><center><p style = 'padding-left:50px; margin-top:100px' class='company-list'>Company List</p><center></strong>");
   $( "#info_column" ).append("<div id='company-container' style='padding-left:50px'> </div>   <ul class='list-group' style = 'width : 500px'></ul>");

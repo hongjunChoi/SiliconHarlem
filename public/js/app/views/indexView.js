@@ -22,8 +22,7 @@ $(function () {
       /* TODO: Query for all courses, parse courseModels
       with .toJSON, instantiate a new trie, and render
       the search bar. */
-
-      // is a success callback necessary?
+      
       window.companyCollection.fetch({
         success: function (options) {
           console.log(options.toJSON());

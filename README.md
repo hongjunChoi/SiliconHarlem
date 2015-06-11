@@ -1,7 +1,5 @@
-HackNY Spring 2015
+HackNY Spring 2015 - Columbia University
 ===========
-Columbia University
-----------
 March 7, 8 2015
 ----------
 
